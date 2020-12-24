@@ -26,12 +26,16 @@ options.add_argument("--headless")
 ```
 > Update : Already add the codes above as an options, you can run headless or normal view
 
+-----
+
 Input the minute to start buying stuff
 
 ```py
 menit = int(input("Masukan menit untuk memulai beli : "))
 ```
 > Ex : Flash sale start at 12 A.M, which is 00.00 in our real-time clock. input the first 2 digit : 00
+
+-----
 
 Steps :
   - Clone this repo.
