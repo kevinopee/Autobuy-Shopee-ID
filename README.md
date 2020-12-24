@@ -28,7 +28,7 @@ options.add_argument("--headless")
 
 -----
 
-Input the minute to start buying stuff: 
+Input the minute to start buying stuff : 
 
 ```py
 menit = int(input("Masukan menit untuk memulai beli : "))
