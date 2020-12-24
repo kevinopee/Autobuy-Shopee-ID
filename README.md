@@ -42,6 +42,7 @@ Steps :
   - Fill your account information such as phone number/email, and a pin number for your payment in account file.
   - Add a proxy/socks5 server is the best options. VPN might be better.
   - Run the save_cookies file first, this file for saving your account, no need to login anymore. Dont **RUN** this code in headless mode.
+  - It will made a new .pkl file, don't delete it, except you want to use another account.
   - Then you ready to go with shopee_bot file.  *You can run this in headless mode, for more speed*.
   
   -----
