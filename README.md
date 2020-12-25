@@ -1,4 +1,4 @@
-# Autobuy-bot-for-E-Commerce
+# Autobuy-Bot-Shopee-ID
 
 > Tested in Shopee ID.
 
