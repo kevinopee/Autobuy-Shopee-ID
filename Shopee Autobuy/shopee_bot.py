@@ -90,6 +90,7 @@ def main():
     # Input product link
     link_produk = input("Masukan link produk : ")
     browser.get(link_produk)
+    # Input menit
     menit = int(input("Masukan menit untuk memulai beli : "))
 
     # This is my masterpiece logic piece of shit
