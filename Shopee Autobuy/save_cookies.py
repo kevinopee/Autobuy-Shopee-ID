@@ -8,6 +8,7 @@ from fake_useragent import UserAgent
 from selenium.webdriver.support.ui import WebDriverWait as WD
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import *
 
 UC.TARGET_VERSION = 87
@@ -55,36 +56,18 @@ def login(number, password):
         browser.execute_script("arguments[0].click();", enter)
     except NoSuchElementException as e:
         print(e)
-
-    time.sleep(10)
-
-def verif():
     try:
         click_login_button = WD(browser, 60).until(EC.element_to_be_clickable((
-                By.XPATH, '//*[@id="modal"]/aside/div[1]/div/div[2]/button[2]')))
+            By.XPATH, '//*[@id="modal"]/aside/div[1]/div/div[2]/button[2]')))
         browser.execute_script("arguments[0].click();", click_login_button)
-        time.sleep(60)
-        print("Do it manually!")
-        verif_input = WD(browser,60).until(EC.element_to_be_clickable((
-                By.XPATH, '//*[@id="main"]/div/div[2]/div/div/form/div/div[2]/div[3]/input[1]')))
-        browser.execute_script("arguments[0].click();", verif_input)
-        time.sleep(3)
-        verif_nomor = int(input("\nMasukan kode verifikasi : "))
-        time.sleep(20)
-        verif_input.send_keys(verif_nomor)
-        logg = WD(browser, 60).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="main"]/div/div[2]/div/div/form/div/div[2]/button')))
-        browser.execute_script("arguments[0].click();", logg)
-        print("Berhasil login!")
     except NoSuchElementException as e:
         print(e)
-        print("Cari sendiri y elementnya kalo pop up ini muncul hehe")
-    time.sleep(20)
+    time.sleep(10)
 
 def main():
     authors()
     time.sleep(10)
     login(ac.email_phone_number, ac.passwd)
-    verif()
     pickle.dump(browser.get_cookies(), open("cookies.pkl", "wb"))
 
 if __name__ == "__main__":
