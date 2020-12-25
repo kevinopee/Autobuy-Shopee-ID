@@ -13,25 +13,7 @@ from selenium.common.exceptions import *
 UC.TARGET_VERSION = 87
 
 options = UC.ChromeOptions()
-hl = input("Headless / Normal")
-if hl == "Headless":
-    options.headless = True
-    options.add_argument("--headless")
-else:
-    options.headless = False
-    options.add_argument("start-maximized")
-options.add_argument("disable-extensions")
-
-# Add proxy to become more invisible
-server = input("Proxy / Socks5 / None : ")
-if server.lower == "proxy":
-    proxy = input("Masukan proxy : ")
-    options.add_argument(f'--proxy-server={proxy}')
-elif server.lower == "socks5":
-    socks5 = input("Masukan socks5 : ")
-    options.add_argument(f'--proxy-server=socks5://{socks5}')
-else:
-    pass
+options.headless = False
 # Delete comments below if u want to be more undetected
 # Reminder : not all website can be accessed with fake useragent below, cause its randomly faking the ua. peace <3
 # ua = UserAgent()
@@ -62,12 +44,12 @@ def login(number, password):
             By.NAME, 'loginKey')))
         browser.execute_script("arguments[0].click();", number_input)
         number_input.clear()
-        number_input.send_keys(number)
+        number_input.send_keys(ac.email_phone_number)
         pass_input = WD(browser, 60).until(EC.element_to_be_clickable((
             By.NAME, 'password')))
         browser.execute_script("arguments[0].click();", pass_input)
         pass_input.clear()
-        pass_input.send_keys(password)
+        pass_input.send_keys(ac.passwd)
         enter = WD(browser, 60).until(EC.element_to_be_clickable((
             By.XPATH, '//*[@id="main"]/div/div[2]/div/div/form/div/div[2]/button')))
         browser.execute_script("arguments[0].click();", enter)
