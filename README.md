@@ -15,7 +15,7 @@ I'm not responsible for any *causes* by using these codes.
 
 -----
 
-To run headless browser, add this code in chrome options attribute : 
+## To run headless browser, add this code in chrome options attribute : 
 
 ```py
 options.headless = True
@@ -28,7 +28,7 @@ options.add_argument("--headless")
 
 -----
 
-Input the minute to start buying stuff : 
+## Input the minute to start buying stuff : 
 
 ```py
 menit = int(input("Masukan menit untuk memulai beli : "))
@@ -37,7 +37,7 @@ menit = int(input("Masukan menit untuk memulai beli : "))
 
 -----
 
-Steps :
+## Steps :
   - Clone this repo.
   - Fill your account information such as phone number/email, and a pin number for your payment in account file.
   - Add a proxy/socks5 server is the best options. VPN might be better.
@@ -47,4 +47,4 @@ Steps :
   
   -----
  
- Sorry for my bad English. :D
+ Sorry for my bad English. :p
