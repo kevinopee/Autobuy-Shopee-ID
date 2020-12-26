@@ -13,7 +13,6 @@ I'm not responsible for any *causes* by using these codes.
 
 > Read the requirements before using this codes.
 
------
 
 ## To run headless browser, add this code in chrome options attribute : 
 
@@ -24,9 +23,9 @@ options.headless = True
 ```py
 options.add_argument("--headless")
 ```
+
 > Update : Already add the codes above as an options, you can run headless or normal view
 
------
 
 ## Input the minute to start buying stuff : 
 
@@ -46,7 +45,6 @@ menit = int(input("Masukan menit untuk memulai beli : "))
   - It will made a new .pkl file, don't delete it, except you want to use another account.
   - Then you ready to go with shopee_bot file.  *You can run this in headless mode, for more speed*.
   
-  -----
  
  > Update : Added a new warning if there is no cookie exception.
  
