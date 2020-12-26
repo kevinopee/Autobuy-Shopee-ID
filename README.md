@@ -50,7 +50,7 @@ menit = int(input("Masukan menit untuk memulai beli : "))
  
  > Update : Added a new warning if there is no cookie exception.
  
- ## Donation :
+ ## Support :
  - If you satisfied with the code for learning or it works properly, you can give support for me to buy an icecream if u want here : https://paypal.me/kevinopee?locale.x=id_ID
  
  Sorry for my bad English. :p
