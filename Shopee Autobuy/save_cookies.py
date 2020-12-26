@@ -21,7 +21,7 @@ options.headless = False
 # userAgent = ua.random
 # print(userAgent)
 # options.add_argument(f'user-agent={userAgent}')
-options.add_argument(--disable-extensions)
+options.add_argument("--disable-extensions")
 prefs = {"profile.default_content_setting_values.notifications": 2, "credentials_enable_service": False, "profile.password_manager_enabled" : False}
 options.add_experimental_option("prefs", prefs)
 browser = UC.Chrome(options=options, enable_console_log=True)
