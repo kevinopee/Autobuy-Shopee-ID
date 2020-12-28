@@ -21,7 +21,7 @@ if opsi == "headless":
     options.add_argument("--headless")
 else:
     options.headless = False
-    options.add_argument("start-maximized"
+    options.add_argument("start-maximized")
 # Add proxy to become more invisible
 server = input("Proxy / Socks5 / Nope : ")
 if server.lower == "proxy":
