@@ -1,8 +1,0 @@
-python 3.x+
-pip3 install selenium
-pip3 install datetime
-pip3 install pyfiglet
-pip3 install pickle
-clone the required repo for undetected chromedriver, link on readme.md, then
-pip3 install undetected-chromedriver
-chrome browser
